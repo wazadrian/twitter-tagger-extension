@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "X/Twitter Tagger",
+  "version": "1.0",
+  "description": "Tag X/Twitter users with custom labels.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
